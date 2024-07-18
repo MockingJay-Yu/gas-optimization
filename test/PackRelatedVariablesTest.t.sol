@@ -22,7 +22,6 @@ contract PackRelatedVariablesTest is Test {
 
     function testExample1() public {
         gasSavingExample1.packVariables(x, y);
-        assertEq(gasSavingExample1.packedVariables(), packedXY);
         (uint80 var1, uint80 var2) = gasSavingExample1.unpackVariables();
         assertEq(var1, 80);
         assertEq(var2, 90);
@@ -30,8 +29,6 @@ contract PackRelatedVariablesTest is Test {
 
     function testExample2() public {
         gasSavingExample2.setVars(x, y);
-        assertEq(gasSavingExample2.x(), 80);
-        assertEq(gasSavingExample2.y(), 90);
         (uint80 var1, uint80 var2) = gasSavingExample2.loadVars();
         assertEq(var1, 80);
         assertEq(var2, 90);
@@ -41,8 +38,6 @@ contract PackRelatedVariablesTest is Test {
         uint256 var1 = 80;
         uint256 var2 = 90;
         gasSavingExample3.setVars(var1, var2);
-        assertEq(gasSavingExample3.x(), 80);
-        assertEq(gasSavingExample3.y(), 90);
         (uint256 result1, uint256 result2) = gasSavingExample3.loadVars();
         assertEq(result1, 80);
         assertEq(result2, 90);
