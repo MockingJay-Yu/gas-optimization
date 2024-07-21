@@ -2,7 +2,7 @@
 pragma solidity 0.8.20;
 
 import "forge-std/Test.sol";
-import "../src/StorageCache.sol";
+import "../../src/storageOptimization/StorageCache.sol";
 
 contract StorageCacheTest is Test {
     Counter1 counter1;

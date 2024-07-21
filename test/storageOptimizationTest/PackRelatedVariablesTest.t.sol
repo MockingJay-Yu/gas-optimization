@@ -2,7 +2,7 @@
 pragma solidity 0.8.20;
 
 import "forge-std/Test.sol";
-import "../src/PackRelatedVariables.sol";
+import "../../src/storageOptimization/PackRelatedVariables.sol";
 
 contract PackRelatedVariablesTest is Test {
     GasSavingExample1 gasSavingExample1;

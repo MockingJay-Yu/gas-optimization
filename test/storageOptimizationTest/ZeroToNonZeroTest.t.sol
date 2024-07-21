@@ -2,7 +2,7 @@
 pragma solidity 0.8.20;
 
 import "forge-std/Test.sol";
-import "../src/ZeroToNonZero.sol";
+import "../../src/storageOptimization/ZeroToNonZero.sol";
 
 contract ZeroToNonZeroTest is Test {
     ZeroToNonZero zeroToNonZero;

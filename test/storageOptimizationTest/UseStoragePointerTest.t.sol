@@ -2,7 +2,7 @@
 pragma solidity 0.8.20;
 
 import "forge-std/Test.sol";
-import "../src/UseStoragePointer.sol";
+import "../../src/storageOptimization/UseStoragePointer.sol";
 
 contract UseStoragePointerTest is Test {
     StoragePointerOptimized storagePointerOptimized;

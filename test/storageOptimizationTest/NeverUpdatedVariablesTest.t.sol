@@ -3,7 +3,7 @@
 pragma solidity 0.8.20;
 
 import "forge-std/Test.sol";
-import "../src/NeverUpdatedVariables.sol";
+import "../../src/storageOptimization/NeverUpdatedVariables.sol";
 
 contract NeverUpdatedVariablesTest is Test {
     Constants constants;
