@@ -2,8 +2,8 @@
 
 pragma solidity 0.8.20;
 
-//dev When a storage variable changes from zero to non-zero,
-//it is more expensive than changing from non-zero to non-zero
+//dev When a storage variable changes from zero to non-zero,it is more expensive than changing
+//from non-zero to non-zero.When setting storage variable to zero, a refund is given.
 contract ZeroToNonZero {
     uint256 public zero;
     uint256 public one = 1;
